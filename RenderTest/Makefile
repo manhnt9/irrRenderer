@@ -4,13 +4,13 @@ SOURCES := $(wildcard *.cpp)
 OBJS := $(patsubst %.cpp,obj/%.o,$(SOURCES))
 DEBUGOBJS := $(patsubst %.cpp,obj/debug/%.o,$(SOURCES))
 
-IRRLICHT := ../../irrlicht
+IRRLICHT := ../irrlicht
 RENDERER := ..
 
 CPPFLAGS := -I$(RENDERER)/include -Iinclude -Wall -O2 -ffast-math -MMD -fPIC -I$(IRRLICHT)/include -I/usr/X11R6/include
 DEBUGFLAGS = -g
 
-LDFLAGS := -L$(IRRLICHT)/lib/Linux -lIrrlicht -lirrRenderer -lXxf86vm -lX11 -lGL -lEGL -lXext -lXcursor
+LDFLAGS := -L$(IRRLICHT)/lib/Linux -lIrrlicht -lirrRenderer -lXxf86vm -lX11 -lGL -lXext -lXcursor
 
 
 all: release
