@@ -5,7 +5,7 @@ CTestFramework::CTestFramework(bool vsync, bool automode)
      LastFPS(0),
      Vsync(vsync),
      Fullscreen(false),
-     Resolution(800, 600)
+     Resolution(1280, 720)
 {
     // autodetect video settings (resolution, depth)
     if(automode)
@@ -170,9 +170,6 @@ CTestFramework::CTestFramework(bool vsync, bool automode)
 
     AA->setActive(false);
     Bloom->setActive(false);*/
-
-
-    Device->getLogger()->log("Who's that callin'?"); //Ain't nobody there
 }
 
 CTestFramework::~CTestFramework()

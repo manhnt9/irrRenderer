@@ -7,7 +7,7 @@ varying float Depth;
 
 void main()
 {
-    vec2 coord = gl_FragCoord.xy / vec2(800.0, 600.0);
+    vec2 coord = gl_FragCoord.xy / vec2(1280.0, 720.0);
     float backgroundDepth = texture2D(Tex1, coord).r;
     if (Depth > backgroundDepth)
         discard;
