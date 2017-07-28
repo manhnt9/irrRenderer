@@ -157,6 +157,8 @@ CTestFramework::CTestFramework(bool vsync, bool automode)
         if(tangentMesh)tangentMesh->drop();
     }
 
+    // smgr->setAmbientLight(irr::video::SColorf(0.5f,0.5f,0.5f,0.5f));
+
     //! set up post processing
     /*Renderer->createPostProcessingEffect(irr::video::EPE_FOG);
     AA = Renderer->createPostProcessingEffect(irr::video::EPE_ANTIALIASING);

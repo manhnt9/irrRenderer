@@ -48,7 +48,6 @@ void irr::video::CRenderer::createDefaultPipeline()
     LightMgr->setMRTs(MRTs);
     Device->getSceneManager()->setLightManager(LightMgr);
 
-
     Materials->Solid= (irr::video::E_MATERIAL_TYPE)createMaterial(ShaderLib->getShader("solid"), new irr::video::IShaderDefaultCallback);
     Materials->TransparentRef= (irr::video::E_MATERIAL_TYPE)createMaterial(ShaderLib->getShader("transparent_alpha_ref"), new irr::video::IShaderDefaultCallback);
     Materials->Transparent= (irr::video::E_MATERIAL_TYPE)createMaterial(ShaderLib->getShader("transparent_alpha"),
