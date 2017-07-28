@@ -10,7 +10,7 @@ CPPFLAGS := -Iinclude/ -Wall -O2 -ffast-math -MMD -fPIC -I$(IRRLICHT)/include -I
 DEBUGFLAGS = -g
 
 
-all: release
+all: debug 
 
 debug: $(DEBUGOBJS)
 	mkdir -p lib/linux/debug

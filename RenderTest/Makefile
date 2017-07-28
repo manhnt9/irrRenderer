@@ -13,7 +13,7 @@ DEBUGFLAGS = -g
 LDFLAGS := -L$(IRRLICHT)/lib/Linux -lIrrlicht -lirrRenderer -lXxf86vm -lX11 -lGL -lXext -lXcursor
 
 
-all: release
+all: debug 
 
 debug: $(DEBUGOBJS)
 	g++ $(CPPFLAGS) $(DEBUGFLAGS) $^ -o ../bin/$(TARGET) $(LDFLAGS) -L$(RENDERER)/lib/linux/debug
