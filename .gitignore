@@ -1,0 +1,8 @@
+.vscode/
+
+RenderTest/obj/
+bin/RenderTest
+irrlicht/
+lib/
+obj/
+
