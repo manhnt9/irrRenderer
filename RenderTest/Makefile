@@ -10,8 +10,7 @@ RENDERER := ..
 CPPFLAGS := -I$(RENDERER)/include -Iinclude -Wall -O2 -ffast-math -MMD -fPIC -I$(IRRLICHT)/include -I/usr/X11R6/include
 DEBUGFLAGS = -g
 
-LDFLAGS := -L$(IRRLICHT)/lib/Linux -lIrrlicht -lirrRenderer -lXxf86vm -lX11 -lGL -lXext -lXcursor
-
+LDFLAGS := -L$(IRRLICHT)/lib/Linux -lIrrlicht -lirrRenderer -lXxf86vm -lX11 -lGL -lXext
 
 all: debug 
 
